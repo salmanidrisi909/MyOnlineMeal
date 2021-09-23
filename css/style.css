@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#navbar::before{
+    content: "";
+    background-color: black; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;    
+}
+#navbar ul li{
+    list-style: none;
+    margin: 12px 10px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    margin: 15px 15px;
+    height: 400px;
+    color: white;
+    text-align: center;
+
+}
+#home::before{
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 5px 15px;
+    padding: 15px 5px;
+    border-radius: 15px;
+    background-color: rgb(243, 243, 220);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+#client-section{
+    height: 300px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    background: url('../img/bg2.png') no-repeat center center/cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item img{
+    height: 100px;
+    border-radius: 25%;
+}
+.client-item{
+    padding: 30px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('../img/contact\ us.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;   
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 8px;
+}
+.btn{
+    margin: 20px 20px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: burlywood;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
